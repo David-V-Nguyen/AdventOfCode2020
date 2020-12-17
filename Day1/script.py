@@ -13,12 +13,20 @@ lines = list(map(str.strip, num))
 
 print(list(lines))
 
-# store the input of values within its list inside cleanLines 
-cleanLines = list(lines)
+# store the input of values within its list inside lines 
+lines = list(lines)
 
-int(cleanLines)
+# Loop through collection 'lines' and cast each item string => integer
+values = []
+for x in lines: # x is every single item
+    values.append(int(x)) # 'collection'.append(), adds to the collection
+    
+print(values)
 
-# 
-x = 0
-for x in int(cleanLines): 
-    print("hello world")
+# Add 2 values if they equal 2020, multiply them together
+def calculateTwoValues(a, b):
+    while i <= len(values):
+        while m <= len(values):
+            values.range([2])
+            if a + b == 2020:
+            
