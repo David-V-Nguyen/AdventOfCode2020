@@ -11,7 +11,7 @@ print(num)
 # strip removes spaces and new line characters
 lines = list(map(str.strip, num))
 
-print(list(lines))
+#print(list(lines))
 
 # store the input of values within its list inside lines 
 lines = list(lines)
@@ -24,9 +24,26 @@ for x in lines: # x is every single item
 print(values)
 
 # Add 2 values if they equal 2020, multiply them together
-def calculateTwoValues(a, b):
-    while i <= len(values):
-        while m <= len(values):
-            values.range([2])
-            if a + b == 2020:
-            
+'''
+def calculateTwoValues():
+    i = 0
+    while i < len(values):
+        if 2020 - values[i] in values:     # i = item in values
+            print(values[i] * (2020 - values[i]))
+        i+=1
+'''
+def calculateTwoValues():
+    for i in values:
+        if 2020 - i in values:  # 2020 - i = ???
+            print(i * (2020 - i))
+
+calculateTwoValues()
+
+# Add 3 values if the equal 2020, multiply them together
+def calculateThreeValues():
+    for i in values:
+        for p in values:
+            if 2020 - i - p in values:
+                print(i * (2020 - i - p) * (p)) # 3rd value = (2020 - i - p)
+
+calculateThreeValues()
