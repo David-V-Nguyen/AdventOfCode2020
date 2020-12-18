@@ -32,6 +32,7 @@ def calculateTwoValues():
             print(values[i] * (2020 - values[i]))
         i+=1
 '''
+
 def calculateTwoValues():
     for i in values:
         if 2020 - i in values:  # 2020 - i = ???
@@ -46,4 +47,5 @@ def calculateThreeValues():
             if 2020 - i - p in values:
                 print(i * (2020 - i - p) * (p)) # 3rd value = (2020 - i - p)
 
+# Remember to call the function each time a function is made
 calculateThreeValues()
